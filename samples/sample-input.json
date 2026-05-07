@@ -1,0 +1,22 @@
+{
+  "product": {
+    "repository": "work-timecard-daily-report",
+    "title": "作業打刻・日報生成"
+  },
+  "items": [
+    {
+      "id": "work-timecard-daily-report-happy",
+      "title": "作業打刻・日報生成 happy",
+      "status": "ready",
+      "tags": [
+        "androidapp",
+        "closed-alpha"
+      ],
+      "startedAt": "2026-05-08T09:00:00+09:00",
+      "endedAt": "2026-05-08T17:30:00+09:00",
+      "outcome": "PR作成と検証完了",
+      "owner": "closed-alpha",
+      "dailyReportNote": "日報に転記する要約あり"
+    }
+  ]
+}

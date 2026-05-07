@@ -1,0 +1,126 @@
+[
+  {
+    "id": "happy-path",
+    "purpose": "作業打刻・日報生成 の正常入力を検証する",
+    "items": [
+      {
+        "id": "work-timecard-daily-report-happy",
+        "title": "作業打刻・日報生成 happy",
+        "status": "ready",
+        "tags": [
+          "androidapp",
+          "closed-alpha"
+        ],
+        "startedAt": "2026-05-08T09:00:00+09:00",
+        "endedAt": "2026-05-08T17:30:00+09:00",
+        "outcome": "PR作成と検証完了",
+        "owner": "closed-alpha",
+        "dailyReportNote": "日報に転記する要約あり"
+      }
+    ],
+    "expected": {
+      "result": "passed",
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "missing-required",
+    "purpose": "必須項目不足を error として検出する",
+    "items": [
+      {
+        "id": "work-timecard-daily-report-missing",
+        "status": "ready",
+        "tags": [
+          "androidapp",
+          "closed-alpha"
+        ],
+        "startedAt": "2026-05-08T09:00:00+09:00",
+        "endedAt": "2026-05-08T17:30:00+09:00",
+        "outcome": "PR作成と検証完了",
+        "owner": "closed-alpha",
+        "dailyReportNote": "日報に転記する要約あり"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "warning",
+    "purpose": "推奨項目不足を warning として検出する",
+    "items": [
+      {
+        "id": "work-timecard-daily-report-warning",
+        "title": "作業打刻・日報生成 warning",
+        "status": "ready",
+        "tags": [
+          "androidapp",
+          "closed-alpha"
+        ],
+        "startedAt": "2026-05-08T09:00:00+09:00",
+        "endedAt": "2026-05-08T17:30:00+09:00",
+        "outcome": "PR作成と検証完了",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "warning",
+      "errors": 0,
+      "warnings": 1
+    }
+  },
+  {
+    "id": "mixed-batch",
+    "purpose": "正常、必須不足、警告を同一バッチで集計する",
+    "items": [
+      {
+        "id": "work-timecard-daily-report-happy",
+        "title": "作業打刻・日報生成 happy",
+        "status": "ready",
+        "tags": [
+          "androidapp",
+          "closed-alpha"
+        ],
+        "startedAt": "2026-05-08T09:00:00+09:00",
+        "endedAt": "2026-05-08T17:30:00+09:00",
+        "outcome": "PR作成と検証完了",
+        "owner": "closed-alpha",
+        "dailyReportNote": "日報に転記する要約あり"
+      },
+      {
+        "id": "work-timecard-daily-report-missing",
+        "status": "ready",
+        "tags": [
+          "androidapp",
+          "closed-alpha"
+        ],
+        "startedAt": "2026-05-08T09:00:00+09:00",
+        "endedAt": "2026-05-08T17:30:00+09:00",
+        "outcome": "PR作成と検証完了",
+        "owner": "closed-alpha",
+        "dailyReportNote": "日報に転記する要約あり"
+      },
+      {
+        "id": "work-timecard-daily-report-warning",
+        "title": "作業打刻・日報生成 warning",
+        "status": "ready",
+        "tags": [
+          "androidapp",
+          "closed-alpha"
+        ],
+        "startedAt": "2026-05-08T09:00:00+09:00",
+        "endedAt": "2026-05-08T17:30:00+09:00",
+        "outcome": "PR作成と検証完了",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 1
+    }
+  }
+]

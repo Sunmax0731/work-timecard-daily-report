@@ -1,0 +1,52 @@
+{
+  "rank": 81,
+  "domain": "AndroidApp",
+  "ideaNo": 6,
+  "ideaName": "作業打刻・日報生成",
+  "repository": "work-timecard-daily-report",
+  "publish": "Google Play",
+  "createdIdeaLookup": {
+    "exactPathFirst": "D:/AI/AndroidApp/created_idea_006_work-timecard-daily-report",
+    "exactPathExists": true,
+    "fallbackSearched": false,
+    "fallbackResults": [],
+    "notes": "完全一致の created_idea と ZIP を使用した。"
+  },
+  "zipLookup": {
+    "exactZip": "D:/AI/AndroidApp/created_idea_006_work-timecard-daily-report/idea_006_work-timecard-daily-report.zip",
+    "exactZipExists": true,
+    "requiredFiles": [
+      "metadata.json",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md"
+    ],
+    "missingRequiredFiles": []
+  },
+  "zipMetadata": {
+    "domain": "AndroidApp",
+    "no": 6,
+    "platform": "AndroidApp",
+    "field": "Android日常ツール",
+    "idea": "作業打刻・日報生成",
+    "overview": "開始終了ボタン、成果メモ、写真付き日報を生成する。入力、確認、履歴保存、次アクションを同じ作業単位で扱えるようにする。",
+    "problem": "作業時間と成果物の記録が後回しになりやすい。",
+    "similar": "Google Keep, Todoist, Microsoft To Do, Loop Habit Tracker, Bring!, MyTherapy, Niagara Launcher",
+    "diff": "スマホから打刻し、PC作業へ流用できる日本語日報を作る。",
+    "repositoryName": "work-timecard-daily-report",
+    "repositoryTitle": "work-timecard-daily-report",
+    "zipFile": "idea_006_work-timecard-daily-report.zip"
+  },
+  "metadataRepositoryMatches": true,
+  "metadataZipMatches": true,
+  "initialRepositoryReadme": {
+    "existedBeforeCreation": false,
+    "note": "正式 repo が存在しなかったため README.md は存在しないと記録し、domain docs と created_idea ZIP を根拠に作成した。"
+  },
+  "mojibakePolicy": "ZIP本文や既存Markdownは丸写しせず、PICKUP行、metadata、domain docsから正式docsを再構成する。",
+  "unstableEvidencePolicy": "ZIPサイズ、生成時刻、絶対一時パスはQCDS固定根拠に使わない。"
+}

@@ -1,0 +1,32 @@
+export const productProfile = {
+  "repository": "work-timecard-daily-report",
+  "title": "作業打刻・日報生成",
+  "domain": "AndroidApp",
+  "hostApp": null,
+  "rank": 81,
+  "tier": "P2",
+  "ideaNo": 6,
+  "overview": "開始終了ボタン、成果メモ、写真付き日報を生成する。入力、確認、履歴保存、次アクションを同じ作業単位で扱えるようにする。",
+  "problem": "作業時間と成果物の記録が後回しになりやすい。",
+  "differentiation": "スマホから打刻し、PC作業へ流用できる日本語日報を作る。",
+  "publish": "Google Play",
+  "surface": "Android closed-alpha product core + mobile preview",
+  "entity": "timecard report item",
+  "requiredFields": [
+    "id",
+    "title",
+    "startedAt",
+    "endedAt",
+    "outcome",
+    "owner"
+  ],
+  "warningField": "dailyReportNote",
+  "qcdsManualTestCap": "S-",
+  "qcdsTarget": "A-",
+  "benchmarkRepos": [
+    "Sunmax0731/listing-delivery-asset-checklist",
+    "Sunmax0731/codex-remote-android",
+    "Sunmax0731/release-output-check-flow",
+    "Sunmax0731/movie-telop-transcriber"
+  ]
+};

@@ -1,0 +1,23 @@
+{
+  "command": "node tools/web-smoke.mjs",
+  "nonBlank": true,
+  "checks": [
+    {
+      "id": "html-nonblank",
+      "pass": true
+    },
+    {
+      "id": "app-marker",
+      "pass": true
+    },
+    {
+      "id": "css-nonblank",
+      "pass": true
+    },
+    {
+      "id": "title-present",
+      "pass": true
+    }
+  ],
+  "manualTestSeparated": true
+}
