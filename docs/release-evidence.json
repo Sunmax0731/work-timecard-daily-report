@@ -1,11 +1,20 @@
 {
   "repo": "work-timecard-daily-report",
   "githubUrl": "https://github.com/Sunmax0731/work-timecard-daily-report",
-  "releaseUrl": null,
+  "releaseUrl": "https://github.com/Sunmax0731/work-timecard-daily-report/releases/tag/v0.1.0-alpha.1",
   "tag": "v0.1.0-alpha.1",
-  "prerelease": null,
-  "latestFalseCheck": null,
-  "releaseAssetNames": [],
+  "prerelease": true,
+  "latestFalseCheck": {
+    "latestEndpoint": "404-or-no-stable-release",
+    "latestTag": null,
+    "doesNotReturnThisTag": true
+  },
+  "releaseAssetNames": [
+    "manual-test.md",
+    "strict-manual-test-addendum.md",
+    "work-timecard-daily-report-docs.zip"
+  ],
+  "releaseAssetCount": 3,
   "qcdsEvaluation": {
     "Quality": "S-",
     "Cost": "S-",
@@ -16,12 +25,20 @@
   "automatedTests": [
     {
       "command": "npm test",
-      "result": "pending"
+      "result": "passed"
     }
   ],
   "docsZipPath": "dist/work-timecard-daily-report-docs.zip",
-  "mainOriginClean": null,
-  "codexBranchCleanup": null,
+  "mainOriginClean": {
+    "aheadBehind": "0\t0",
+    "status": "## main...origin/main",
+    "clean": true
+  },
+  "codexBranchCleanup": {
+    "local": [],
+    "remote": [],
+    "clean": true
+  },
   "manualTestsNotRun": [
     "実機または公開先での継続利用確認",
     "公開先での表示確認",
