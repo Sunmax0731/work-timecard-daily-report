@@ -1,0 +1,135 @@
+{
+  "repository": "work-timecard-daily-report",
+  "title": "作業打刻・日報生成",
+  "benchmarkRepos": [
+    "Sunmax0731/listing-delivery-asset-checklist",
+    "Sunmax0731/codex-remote-android",
+    "Sunmax0731/release-output-check-flow",
+    "Sunmax0731/movie-telop-transcriber"
+  ],
+  "manualTestStatus": "not-run-by-codex",
+  "manualTestCap": "S-",
+  "scenarioResults": [
+    {
+      "id": "happy-path",
+      "purpose": "作業打刻・日報生成 の正常入力を検証する",
+      "expected": {
+        "result": "passed",
+        "errors": 0,
+        "warnings": 0
+      },
+      "actual": {
+        "result": "passed",
+        "errors": 0,
+        "warnings": 0,
+        "totalItems": 1
+      },
+      "pass": true
+    },
+    {
+      "id": "missing-required",
+      "purpose": "必須項目不足を error として検出する",
+      "expected": {
+        "result": "failed",
+        "errors": 1,
+        "warnings": 0
+      },
+      "actual": {
+        "result": "failed",
+        "errors": 1,
+        "warnings": 0,
+        "totalItems": 1
+      },
+      "pass": true
+    },
+    {
+      "id": "warning",
+      "purpose": "推奨項目不足を warning として検出する",
+      "expected": {
+        "result": "warning",
+        "errors": 0,
+        "warnings": 1
+      },
+      "actual": {
+        "result": "warning",
+        "errors": 0,
+        "warnings": 1,
+        "totalItems": 1
+      },
+      "pass": true
+    },
+    {
+      "id": "mixed-batch",
+      "purpose": "正常、必須不足、警告を同一バッチで集計する",
+      "expected": {
+        "result": "failed",
+        "errors": 1,
+        "warnings": 1
+      },
+      "actual": {
+        "result": "failed",
+        "errors": 1,
+        "warnings": 1,
+        "totalItems": 3
+      },
+      "pass": true
+    }
+  ],
+  "dimensions": {
+    "Quality": {
+      "score": 92,
+      "grade": "S-",
+      "passed": 6,
+      "expected": 6,
+      "checks": [
+        {
+          "id": "manual-test-cap",
+          "pass": true,
+          "detail": "Codex側では手動テスト未実施のためS-上限"
+        }
+      ]
+    },
+    "Cost": {
+      "score": 92,
+      "grade": "S-",
+      "passed": 6,
+      "expected": 6,
+      "checks": [
+        {
+          "id": "manual-test-cap",
+          "pass": true,
+          "detail": "Codex側では手動テスト未実施のためS-上限"
+        }
+      ]
+    },
+    "Delivery": {
+      "score": 92,
+      "grade": "S-",
+      "passed": 6,
+      "expected": 6,
+      "checks": [
+        {
+          "id": "manual-test-cap",
+          "pass": true,
+          "detail": "Codex側では手動テスト未実施のためS-上限"
+        }
+      ]
+    },
+    "Satisfaction": {
+      "score": 92,
+      "grade": "S-",
+      "passed": 6,
+      "expected": 6,
+      "checks": [
+        {
+          "id": "manual-test-cap",
+          "pass": true,
+          "detail": "Codex側では手動テスト未実施のためS-上限"
+        }
+      ]
+    }
+  },
+  "overallScore": 92,
+  "overallGrade": "S-",
+  "gapBelowAMinus": []
+}
