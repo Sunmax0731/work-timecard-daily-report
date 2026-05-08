@@ -1,52 +1,16 @@
 {
-  "repo": "work-timecard-daily-report",
+  "product": "work-timecard-daily-report",
+  "repository": "Sunmax0731/work-timecard-daily-report",
   "githubUrl": "https://github.com/Sunmax0731/work-timecard-daily-report",
   "releaseUrl": "https://github.com/Sunmax0731/work-timecard-daily-report/releases/tag/v0.1.0-alpha.1",
   "tag": "v0.1.0-alpha.1",
   "prerelease": true,
-  "latestFalseCheck": {
-    "latestEndpoint": "404-or-no-stable-release",
-    "latestTag": null,
-    "doesNotReturnThisTag": true
-  },
-  "releaseAssetNames": [
-    "manual-test.md",
-    "strict-manual-test-addendum.md",
-    "work-timecard-daily-report-docs.zip"
-  ],
-  "releaseAssetCount": 3,
-  "qcdsEvaluation": {
-    "Quality": "S-",
-    "Cost": "S-",
-    "Delivery": "S-",
-    "Satisfaction": "S-",
-    "capReason": "manual-test-not-run-by-codex"
-  },
-  "automatedTests": [
-    {
-      "command": "npm test",
-      "result": "passed"
-    }
-  ],
-  "docsZipPath": "dist/work-timecard-daily-report-docs.zip",
-  "mainOriginClean": {
-    "aheadBehind": "0\t0",
-    "status": "## main...origin/main",
-    "clean": true
-  },
-  "codexBranchCleanup": {
-    "local": [],
-    "remote": [],
-    "clean": true
-  },
-  "manualTestsNotRun": [
-    "実機または公開先での継続利用確認",
-    "公開先での表示確認",
-    "ユーザーによるS+昇格判断"
-  ],
-  "product": "work-timecard-daily-report",
-  "repository": "Sunmax0731/work-timecard-daily-report",
   "latest": false,
+  "latestCheck": {
+    "endpoint": "not-found-or-no-stable-release",
+    "latestTag": null,
+    "latestIsThisPrerelease": false
+  },
   "assetCount": 3,
   "assets": {
     "required": [
@@ -62,14 +26,42 @@
     "actualCount": 3,
     "allRequiredPresent": true
   },
-  "platformRuntimeGate": "dist/platform-runtime-gate-result.json",
-  "platformType": "android-emulator",
+  "qcdsEvaluation": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-"
+  },
+  "platformRuntimeGate": {
+    "product": "work-timecard-daily-report",
+    "platformType": "android-emulator",
+    "pass": true,
+    "method": "runtime-gate",
+    "manualTest": "not-run-by-codex",
+    "required": [
+      "android/settings.gradle",
+      "android/build.gradle",
+      "android/app/build.gradle",
+      "android/app/src/main/AndroidManifest.xml"
+    ],
+    "evidence": "dist/android-emulator-result.json",
+    "packageName": "com.sunmax0731.worktimecarddailyreport"
+  },
+  "automatedTests": [
+    {
+      "command": "npm test",
+      "result": "passed"
+    }
+  ],
   "manualTest": "not-run-by-codex",
-  "github": {
-    "repo": "Sunmax0731/work-timecard-daily-report",
-    "url": "https://github.com/Sunmax0731/work-timecard-daily-report",
-    "releaseUrl": "https://github.com/Sunmax0731/work-timecard-daily-report/releases/tag/v0.1.0-alpha.1",
-    "prerelease": true,
-    "latest": false
+  "git": {
+    "ahead": 0,
+    "behind": 0,
+    "status": "",
+    "localCodex": [
+      "codex/closed-alpha-release"
+    ],
+    "remoteCodex": [],
+    "clean": false
   }
 }
