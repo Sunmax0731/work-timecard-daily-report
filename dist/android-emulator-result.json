@@ -1,0 +1,18 @@
+{
+  "product": "work-timecard-daily-report",
+  "packageName": "com.sunmax0731.worktimecarddailyreport",
+  "build": {
+    "apk": "dist/work-timecard-daily-report-debug.apk",
+    "method": "android-sdk-aapt2-d8-apksigner"
+  },
+  "launch": {
+    "started": true,
+    "activity": ".MainActivity",
+    "amStartStatusOk": true,
+    "pid": "6957"
+  },
+  "emulator": {
+    "avd": "CodexApi30"
+  },
+  "manualTest": "not-run-by-codex"
+}
