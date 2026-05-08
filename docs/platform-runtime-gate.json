@@ -1,0 +1,14 @@
+{
+  "product": "work-timecard-daily-report",
+  "title": "作業打刻・日報生成",
+  "domain": "AndroidApp",
+  "ideaNo": 6,
+  "platformType": "android-emulator",
+  "expectedPublicTarget": "Google Play",
+  "browser": null,
+  "android": {
+    "packageName": "com.sunmax0731.worktimecarddailyreport",
+    "evidence": "dist/android-emulator-result.json"
+  },
+  "evidence": "dist/platform-runtime-gate-result.json"
+}

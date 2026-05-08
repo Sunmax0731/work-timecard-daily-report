@@ -131,5 +131,46 @@
   },
   "overallScore": 92,
   "overallGrade": "S-",
-  "gapBelowAMinus": []
+  "gapBelowAMinus": [],
+  "gradeScale": [
+    "S+",
+    "S-",
+    "A+",
+    "A-",
+    "B+",
+    "B-",
+    "C+",
+    "C-",
+    "D+",
+    "D-"
+  ],
+  "qcdsDefinition": {
+    "Quality": "implementation, representative tests, platform runtime gate, security/privacy, traceability",
+    "Cost": "dependency and operating cost",
+    "Delivery": "release checklist, docs ZIP, prerelease, release evidence",
+    "Satisfaction": "manual-test readiness and user guidance"
+  },
+  "grades": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-"
+  },
+  "manualTestCapApplied": true,
+  "platformRuntimeGate": {
+    "product": "work-timecard-daily-report",
+    "platformType": "android-emulator",
+    "pass": true,
+    "method": "runtime-gate",
+    "manualTest": "not-run-by-codex",
+    "required": [
+      "android/settings.gradle",
+      "android/build.gradle",
+      "android/app/build.gradle",
+      "android/app/src/main/AndroidManifest.xml"
+    ],
+    "evidence": "dist/android-emulator-result.json",
+    "packageName": "com.sunmax0731.worktimecarddailyreport"
+  },
+  "belowAMinus": []
 }

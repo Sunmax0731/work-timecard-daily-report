@@ -1,0 +1,15 @@
+{
+  "product": "work-timecard-daily-report",
+  "platformType": "android-emulator",
+  "pass": true,
+  "method": "runtime-gate",
+  "manualTest": "not-run-by-codex",
+  "required": [
+    "android/settings.gradle",
+    "android/build.gradle",
+    "android/app/build.gradle",
+    "android/app/src/main/AndroidManifest.xml"
+  ],
+  "evidence": "dist/android-emulator-result.json",
+  "packageName": "com.sunmax0731.worktimecarddailyreport"
+}
